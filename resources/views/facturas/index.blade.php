@@ -70,6 +70,7 @@
 @section('scripts')
     <script>
          $('#facturas').DataTable({
+        language: spanish,
         processing: true,
         serverSide: true,
         ajax: '/facturas/listar',

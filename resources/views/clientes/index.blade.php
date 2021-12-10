@@ -77,6 +77,7 @@
 @section('scripts')
     <script>
          $('#clientes').DataTable({
+        language: spanish,
         processing: true,
         serverSide: true,
         ajax: '/Cliente/listar',

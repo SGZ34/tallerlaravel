@@ -85,6 +85,7 @@
 @section('scripts')
     <script>
          $('#productos').DataTable({
+        language: spanish,
         processing: true,
         serverSide: true,
         ajax: '/productos/listar',
