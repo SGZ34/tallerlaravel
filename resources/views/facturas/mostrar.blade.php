@@ -30,8 +30,8 @@
         <tr>
             <td>{{ $detalle->nombre }}</td>
             <td>{{ $detalle->cantidad }}</td>
-            <td>{{ $detalle->subtotal }}</td>
-            <td>{{ $detalle->subtotal * $detalle->cantidad }}</td>
+            <td>{{ $detalle->precioUnidad }}</td>
+            <td>{{ $detalle->subtotal}}</td>
         </tr>
         @endforeach
         <td colspan="4" class="text-center" style="font-weight: bold">{{ $facturaDetalle->total }}</td>

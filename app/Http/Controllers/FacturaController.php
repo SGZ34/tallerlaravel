@@ -62,7 +62,8 @@ class FacturaController extends Controller
                     "idFactura" => $factura->id,
                     "idProducto" => $value,
                     "cantidad" => $inputs["cantidades"][$key],
-                    "subtotal" => $inputs["precios"][$key]
+                    "precioUnidad" => $inputs["precios"][$key],
+                    "subtotal" => $inputs["precios"][$key] * $inputs["cantidades"][$key]
                 ]);
                 $productoEditar = productos::findOrFail($value);
                 $productoEditar = productos::where("id", "=", $value)
